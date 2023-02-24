@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "proxima-nova", sans-serif;
+
+}
+
+.home_container {
+    height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(247, 246, 246, 0.628);
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+img {
+    height: 70px;
+    padding: 10px;
+}
+
+
+.login {
+    padding: 0 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    margin: 14px;
+
+
+}
+
+.signup {
+    padding: 0 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    color: white;
+    background-color: black;
+    margin: 14px;
+}
+
+/* This is Carausel Part  */
+.dishes {
+    background-color: #171a29;
+    height: 340px;
+    padding: 40px 130px;
+}
+
+.slider-container {
+    position: relative;
+    overflow-x: hidden;
+    height: 260px;
+    
+}
+
+.slider-width {
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: start;  
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 260px;
+    margin-right: 60px;
+}
+
+.item>img {
+    height: 110%;
+    width: 110%;
+    position: relative;
+    right: 0;
+    transition: 0.4s ease-in-out;
+   
+}
+.item>img:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.prev{
+    color: white;
+    position: relative;
+    font-size: 50px;
+    bottom: 150px;
+    width: 60px;
+    visibility: hidden;
+}
+.next {
+    color: white;
+    position: relative;
+    font-size: 50px;
+    bottom: 210px;
+    text-align: right;
+    width: 60px;
+    left: 93%;
+    
+   
+}
+
+
+/* This is overlay part  */
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 10vw;
+    background-color: rgba(104, 107, 120, 0.7);
+    top: 0;
+
+}
+
+/* This is sidenav part  */
+.sidenav {
+    height: 100%;
+    width: 558px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -570px;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-right: 150px;
+    /* display: none; */
+}
+
+#cross {
+    padding: 20px 10px 0px 0px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #535665;
+    display: block;
+    transition: 0.5s;
+    font-weight: 10;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navlogin {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 70px;
+    padding-left: 50px;
+}
+
+.create_acc>a {
+    text-decoration: none;
+    color: #fc8019;
+    font-weight: 500;
+
+}
+
+.create_acc>span {
+    padding-left: 50px;
+    display: inline-block;
+}
+
+
+.loginFood>img {
+    position: absolute;
+    top: 58px;
+    right: 140px;
+    width: 120px;
+    height: 125px;
+    z-index: 1;
+}
+
+.loginInput {
+    padding-left: 50px;
+    margin-top: 20px;
+    padding-top: 70px;
+}
+
+.loginInput input {
+
+    background-color: transparent;
+    border: 1px solid #d4d5d9;
+    outline: none;
+    height: 70px;
+    font-size: 17px;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 500;
+    padding: 0 40px 0 20px;
+    width: 350px;
+}
+
+.loginButton {
+    padding-left: 50px;
+    margin-top: 23px;
+}
+
+.loginButton button {
+    width: 350px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0 2rem;
+    color: #fc8019;
+    letter-spacing: 0;
+    color: #fff;
+    background-color: #fc8019;
+    text-transform: uppercase;
+}
+
+.terms {
+    font-size: 12px;
+    color: #686b78;
+    margin-top: 6px;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+
+
+/* Signup nav  */
+
+.sidenavSignup {
+    height: 100%;
+    width: 558px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -570px;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-right: 150px;
+    padding: 0 0;
+    padding-right: 150px;
+    padding-left: 50px;
+
+}
+
+.navloginSignup {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+
+.create_accSignup>a {
+    text-decoration: none;
+    color: #fc8019;
+    font-weight: 500;
+
+}
+
+.create_accSignup>span {
+    display: inline-block;
+}
+
+.loginFoodSignup>img {
+    position: absolute;
+    top: 58px;
+    right: 140px;
+    width: 120px;
+    height: 125px;
+    z-index: 1;
+}
+
+.input1 {
+    margin-top: 20px;
+    padding-top: 70px;
+
+}
+
+.loginInputSignup input {
+    background-color: transparent;
+    border: 1px solid #d4d5d9;
+    outline: none;
+    height: 70px;
+    font-size: 17px;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 500;
+    padding: 0 40px 0 20px;
+    width: 350px;
+    border-bottom: none;
+
+}
+
+.loginInputSignup.input3 input {
+    border-bottom: 1px solid #d4d5d9;
+}
+
+.loginButtonSignup {
+    margin-top: 23px;
+}
+
+.loginButtonSignup button {
+    width: 350px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0 2rem;
+    color: #fc8019;
+    letter-spacing: 0;
+    color: #fff;
+    background-color: #fc8019;
+    text-transform: uppercase;
+}
+
+.referral {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5d8ed5;
+    cursor: pointer;
+}
+
+.termsSignup {
+    font-size: 12px;
+    color: #686b78;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* Caraousle part */
